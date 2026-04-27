@@ -1,4 +1,20 @@
 {
     "java.configuration.updateBuildConfiguration": "interactive",
-    "java.compile.nullAnalysis.mode": "automatic"
+    "java.compile.nullAnalysis.mode": "automatic",
+    "java.import.exclusions": [
+        "**/node_modules/**",
+        "**/android/**"
+    ],
+    "files.exclude": {
+        "**/node_modules": true
+    },
+    "search.exclude": {
+        "**/node_modules": true
+    },
+    "files.watcherExclude": {
+        "**/node_modules/**": true,
+        "**/android/**": true
+    },
+    "java.import.gradle.enabled": false,
+    "java.gradle.buildServer.enabled": "off"
 }
