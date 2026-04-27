@@ -29,3 +29,16 @@ allprojects {
         }
     }
 }
+
+subprojects { subproject ->
+    if (subproject.name == "unomed_react-native-matrix-sdk") {
+        subproject.afterEvaluate {
+            def androidExtension = subproject.extensions.findByName("android")
+            if (androidExtension != null) {
+                androidExtension.sourceSets.main.java.srcDirs += [
+                    "${subproject.projectDir}/generated/java"
+                ]
+            }
+        }
+    }
+}

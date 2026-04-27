@@ -1,5 +1,5 @@
 {
-  "name": "MatrixRustRnPoc",
+  "name": "matrix-rust-rn-poc",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -11,7 +11,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@react-native-async-storage/async-storage": "^2.1.2",
+    "@react-native-async-storage/async-storage": "2.1.2",
     "@unomed/react-native-matrix-sdk": "^0.9.1",
     "react": "18.3.1",
     "react-native": "0.76.9",
@@ -25,6 +25,7 @@
     "@react-native-community/cli": "15.0.1",
     "@react-native-community/cli-platform-android": "15.0.1",
     "@react-native-community/cli-platform-ios": "15.0.1",
+    "@react-native/gradle-plugin": "0.76.9",
     "@react-native/babel-preset": "0.76.9",
     "@react-native/eslint-config": "0.76.9",
     "@react-native/metro-config": "0.76.9",
